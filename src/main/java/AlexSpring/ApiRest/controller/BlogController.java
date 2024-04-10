@@ -1,6 +1,8 @@
 package AlexSpring.ApiRest.controller;
 
+import AlexSpring.ApiRest.Services.AutoreService;
 import AlexSpring.ApiRest.Services.BlogService;
+import AlexSpring.ApiRest.entities.AutoreBlog;
 import AlexSpring.ApiRest.entities.BlogPost;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,6 +15,9 @@ public class BlogController {
 
     @Autowired
     private BlogService blog;
+    @Autowired
+    private AutoreService autoreService;
+
 
     //* 5 ENDPOINT
 
